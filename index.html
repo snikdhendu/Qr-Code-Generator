@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:420px)" href="phone.css">
+</head>
+
+<body>
+    <div class='container'>
+    
+    <section>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="maindiv">
+
+            <div class="subdiv1">
+                <h1>Qr Code <span>Generator</span></h1>
+            </div>
+            <div class="subdiv2">
+
+                <span>Paste a QRL or enter a text to generate Qr Code</span>
+
+                <input type="text">
+
+                <button class="genbtn">Generate QR</button>
+                <div class="resultbox">
+                    <div class="preloader"></div>
+                    <img src="Qr Code.jpg" alt="" id="qrimage">
+
+                    <!-- <button class="downbtn" onclick="downloadImage()">Download <span>icon</span></button> -->
+                </div>
+                
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

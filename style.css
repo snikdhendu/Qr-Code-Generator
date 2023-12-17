@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Audiowide&family=Kanit:wght@300;400&family=Pacifico&family=Poppins:wght@300&family=Proza+Libre&family=Roboto:wght@100&family=Stick+No+Bills:wght@500;600&family=Young+Serif&display=swap');
+
+
+*{
+  
+    font-family: 'Audiowide', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+section {
+    min-height: 100vh;
+    background-color: #0100e9;
+    background-image: linear-gradient(160deg, #01012c 0%, #80D0C7 100%);
+
+    color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(244, 115, 3, 0.9),
+        rgba(230, 238, 6, 0.926)
+    );
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle1 {
+    top: 8%;
+    left: 28%;
+    transform: translate(-10%, -10%);
+}
+
+.circle2 {
+    top: 80%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+}
+.maindiv {
+    height: 530px;
+    width: 500px;
+    border-radius: 17px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(1rem);
+    z-index: 1;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+}
+
+.maindiv h1 {
+    font-size: 32px;
+    color: white;
+   
+    font-family: 'Audiowide', sans-serif;
+}
+.maindiv h1 span{
+    color: yellow;
+    font-family: 'Audiowide', sans-serif;
+}
+.maindiv .subdiv1{
+    width: 100%;
+    height:50px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maindiv .subdiv2{
+    width: 100%;
+    height:460px;
+    /* border: 2px solid rgb(119, 255, 7); */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+.subdiv2 span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color:  darkgreen;
+}
+.subdiv2 input{
+    height: 40px;
+    width: 70%;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+.subdiv2 .resultbox{
+    height: 270px;
+    width: 80%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    flex-direction: column;
+    gap: 23px;
+}
+.resultbox img{
+    height: 180px;
+    width: 200px;
+    display: none;
+    transition: all ease 3s;
+}
+.genbtn{
+    height: 50px;
+    width: 75%;
+    background-color: rgb(72, 72, 234);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.resultbox {
+    position: relative;
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:transparent url('giphy.gif') center center no-repeat;
+    display: none;
+    z-index: 1000; /* Ensure the preloader is on top of other elements */
+}
+
+#qrimage {
+    display: none; /* Initially hide the image */
+}
+
+.downbtn {
+    /* Your button styles here */
+}
