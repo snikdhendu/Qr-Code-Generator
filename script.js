@@ -3,6 +3,7 @@ const genbtn=document.querySelector('.genbtn');
 let qrInput=document.querySelector('input')
 qrImg=document.querySelector('.resultbox img')
 var preloader = document.querySelector('.preloader');
+const downbtn=document.querySelector('.downbtn');
 
 genbtn.addEventListener("click",()=>{
 
@@ -17,7 +18,7 @@ genbtn.addEventListener("click",()=>{
     qrImg.addEventListener('load',()=>{
         qrImg.style.display="flex";
         genbtn.innerHTML="Completed."  
-       
+        downbtn.style.display="flex";
         preloader.style.display = 'none';
     
         // Show the image
